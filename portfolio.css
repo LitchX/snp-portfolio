@@ -185,5 +185,6 @@ footer{
     }
     .header-text{
         text-wrap:break-word;
+        width:80%;
     }
 }
