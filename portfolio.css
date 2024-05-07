@@ -188,3 +188,12 @@ footer{
         width:80%;
     }
 }
+@media screen and (max-height: 600px) {
+    .container {
+        grid-template-rows: 50px auto auto; 
+    }
+
+    .footer {
+        position: static;
+    }
+}
