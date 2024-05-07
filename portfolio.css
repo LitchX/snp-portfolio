@@ -186,6 +186,7 @@ footer{
     .header-text{
         text-wrap:break-word;
         width:80%;
+        font-size: 40px;
     }
 }
 @media screen and (max-height: 600px) {
