@@ -7,11 +7,13 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background: linear-gradient(90deg, rgba(47,47,47,1) 0%, rgba(120,120,120,1) 49%, rgba(7,42,45,1) 100%);
+   
 }
 .container{
     display: grid;
     grid-template-columns: repeat(12  1fr);
-    grid-template-rows: 50px calc(100vh) 50px ;
+    grid-template-rows: 50px 100vh 50px ;
     width:100%;
     
 }
@@ -34,6 +36,8 @@ footer{
     background-color: rgb(37, 37, 37);
     width: 100%;
     padding: 0;
+    position: relative;
+  
    
 }
 .nav-container {
@@ -73,6 +77,7 @@ footer{
     margin-left:20px;
     text-align: justify;
     grid-template-columns: auto auto;
+ 
 
 }
 .header-text{
@@ -156,6 +161,11 @@ footer{
     width:50px;
 }
 @media  screen and (max-width:600px) {
+    footer{
+        margin-top: auto;
+        position: static;
+
+    }
     .container {
         padding:0;
         margin:0;
@@ -167,6 +177,7 @@ footer{
         display: flex;
         flex-direction: column;
         gap:20px;
+        min-height: max-content;
 
     }
     .image-control{
@@ -182,22 +193,24 @@ footer{
     .main-container .intro{
         text-wrap: break-word;
         width:300px;
+        
     }
     .header-text{
         text-wrap:break-word;
         width:80%;
         font-size: 40px;
     }
+   
 }
 @media screen and (max-height: 600px) {
     .container {
-        grid-template-rows: 50px auto auto; 
+        grid-template-rows: 50px auto 50px; 
     }
 
     .footer {
         position: static;
-    }
-    .header-text{
+    }.header-text{
         font-size: 40px;
     }
+
 }
