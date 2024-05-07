@@ -197,4 +197,7 @@ footer{
     .footer {
         position: static;
     }
+    .header-text{
+        font-size: 40px;
+    }
 }
