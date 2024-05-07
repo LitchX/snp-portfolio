@@ -7,8 +7,6 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: linear-gradient(90deg, rgba(47,47,47,1) 0%, rgba(120,120,120,1) 49%, rgba(7,42,45,1) 100%);
-   
 }
 .container{
     display: grid;
